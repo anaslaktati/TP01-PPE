@@ -1,7 +1,7 @@
 <?php
     include_once("./modele/modele.inc.php");
     if (!isset($connection) || $connection != null) {
-        $connexion = connecter()
+        $connexion = connecter();
     }
     if ($connexion ) {
         $listeCateg= getListeCategoriesProduits($connexion);
